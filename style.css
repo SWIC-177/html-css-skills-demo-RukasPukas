@@ -1,0 +1,123 @@
+body
+ {
+  font-family: 'Arial', sans-serif; 
+  background-color: #6c757d;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+}
+
+.right-text 
+{
+  position: fixed;
+  top: 55%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #6c757d;
+  padding: 20px;
+}
+
+.header-container 
+{
+  background-color: silver; 
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 
+{
+  color: #000;
+  font-family: 'cursive', 'Brush Script MT', cursive;
+  
+}
+
+.image-container
+{
+  display: flex;
+  justify-content: space-around; 
+  margin-top: 20px; 
+  margin-bottom: 10px;
+}
+
+.image-container img 
+{
+  max-width: 100%; 
+  height: auto; 
+  width: 100px;
+}
+
+.navigation-container
+{
+  background-color: silver; 
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-container a 
+{
+  margin: 0 150px; /
+  text-decoration: none;
+  color: #333;
+  font-size: 32px;
+  font-family: 'cursive', 'Brush Script MT', cursive;
+}
+
+.me-image
+{
+  max-width: 100%; 
+  height: auto; 
+  margin-top: 20px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  
+}
+
+.biography
+{
+	font-weight: bold;
+	max-width: 25%;
+	margin-left: auto; 
+    margin-right: auto; 
+}
+
+.biography img 
+{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a 
+{
+  color: inherit;
+  text-decoration: none;
+
+}
+
+a:hover 
+{
+
+  text-decoration: underline; 
+}
+
+footer
+ {
+  background-color: silver;
+  text-align: center;
+  color: #000; 
+  font-size: 12px;
+  padding: 10px; 
+}
