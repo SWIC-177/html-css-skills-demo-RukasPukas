@@ -64,6 +64,8 @@ h1
   justify-content: center;
 }
 
+
+
 .navigation-container a 
 {
   margin: 0 150px; 
@@ -100,17 +102,21 @@ h1
   margin-right: auto;
 }
 
-a 
+.a 
 {
   color: inherit;
   text-decoration: none;
 
 }
 
+a:visited
+{
+  color: white;
+}
+
 a:hover 
 {
-
-  text-decoration: underline; 
+text-decoration: underline; 
 }
 
 footer
@@ -158,4 +164,30 @@ footer
 {
   display: block;
   margin-bottom: 15px;
+}
+
+.grid
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.grid-item 
+{
+  display: flex;
+  flex-direction: column;
+  border: 10px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+}
+
+.prompt 
+{
+  font-weight: bold;
+}
+
+.value 
+{
+  margin-top: 5px;
 }
