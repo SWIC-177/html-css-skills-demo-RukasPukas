@@ -191,3 +191,21 @@ footer
 {
   margin-top: 5px;
 }
+
+
+.grid2
+{
+display:grid;
+padding:5px;
+}
+
+.grid-item2
+{
+border: 10px solid #ddd;
+}
+
+.grid-item img
+ {
+  width: 75%;
+  height: auto;
+}
