@@ -1,101 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-   	<link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luke Tyon Contact Page</title>
   </head>
 
   <body>
- 
-	<div class="header-container">
-		<h1>Luke "Lukas" Tyon Contact</h1>
-	</div>
-	<br>
-  <br>
-  <div class="navigation-container">
-  
-    <a href="index.html">Home</a>
-    <a href="contact.html">Contact</a>
+    <div class="header-container">
+      <h1>Luke "Lukas" Tyon Contact</h1>
+    </div>
+    <br />
+    <br />
+    <div class="navigation-container">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </div>
 
- </div>
+    <div class="right-text">Just your average nerd.</div>
 
- <div class="right-text">
-  Just your average nerd.
-</div>
+    <div class="form" id="about-me">
+      <h2>Contact me:</h2>
 
- <div class="form" id="about-me">
-  <h2>Contact me:</h2>
+      <form
+        action="mailto:lukastyon@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first_name" required />
+        <br />
+        <br />
 
-  <form action="mailto:lukastyon@gmail.com" method="post" enctype="text/plain">
-    <label for="first-name">First Name:</label>
-    <input type="text" id="first-name" name="first_name" required>
-    <br>
-    <br>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last_name" required />
+        <br />
+        <br />
 
-    <label for="last-name">Last Name:</label>
-    <input type="text" id="last-name" name="last_name" required>
-    <br>
-    <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <br />
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <br>
-    <br>
+        <label><b>Am I:</b></label>
+        <br />
+        <br />
+        <input type="radio" id="cool" name="opinion" value="Cool" />
+        <label for="cool">Cool</label>
 
+        <input type="radio" id="handsome" name="opinion" value="Handsome" />
+        <label for="handsome">Handsome</label>
 
+        <input type="radio" id="funny" name="opinion" value="Funny" />
+        <label for="funny">Funny</label>
+        <br />
 
-    <label><b>Am I:</b></label>
-    <br>
-    <br>
-    <input type="radio" id="cool" name="opinion" value="Cool">
-    <label for="cool">Cool</label>
+        <input type="radio" id="all" name="opinion" value="All of the above" />
+        <label for="all">All of the above</label>
+        <br />
+        <br />
+        <br />
 
-    <input type="radio" id="handsome" name="opinion" value="Handsome">
-    <label for="handsome">Handsome</label>
+        <label for="reason">Reason for contacting:</label>
+        <select id="reason" name="reason">
+          <option value="business">Business</option>
+          <option value="recreation">Recreation</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
+        <br />
+        <br />
 
-    <input type="radio" id="funny" name="opinion" value="Funny">
-    <label for="funny">Funny</label>
-    <br>
-    
-    <input type="radio" id="all" name="opinion" value="All of the above">
-    <label for="all">All of the above</label>
-    <br>
-    <br>
-    <br>
+        <label for="message" class="message-label">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          cols="50"
+          rows="10"
+          placeholder="Enter your message here, for example: Wow Luke, you are so Awesome!"
+          required
+        ></textarea>
+        <br />
+        <br />
 
-    <label for="reason">Reason for contacting:</label>
-    <select id="reason" name="reason">
-      <option value="business">Business</option>
-      <option value="recreation">Recreation</option>
-      <option value="other">Other</option>
-    </select>
-    <br>
-    <br>
-    <br>
+        <label for="email-back">Email me back?</label>
+        <input type="checkbox" id="email-back" name="email_back" />
+        <br />
+        <br />
+        <br />
 
-    <label for="message" class="message-label">Message:</label>
-    <textarea id="message" name="message" cols ="50" rows="10" placeholder="Enter your message here, for example: Wow Luke, you are so Awesome!" required></textarea>
-    <br>
-    <br>
-
-    <label for="email-back">Email me back?</label>
-    <input type="checkbox" id="email-back" name="email_back">
-    <br>
-    <br>
-    <br>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
-	
-	</body>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
 
   <footer>
-    &copy; Luke Tyon 2024 | <a href="mailto:lukastyon@gmail.com">lukastyon@gmail.com</a> | (618)477-3413
-  
-    
+    &copy; Luke Tyon 2024 |
+    <a href="mailto:lukastyon@gmail.com">lukastyon@gmail.com</a> | (618)477-3413
   </footer>
-  </html>
+</html>
