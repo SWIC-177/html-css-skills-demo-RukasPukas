@@ -1,8 +1,7 @@
 @import url("node_modules/modern-normalize/modern-normalize.css");
 
-body
- {
-  font-family: 'Arial', sans-serif; 
+body {
+  font-family: Arial, sans-serif;
   background-color: #6c757d;
   color: #fff;
   text-align: center;
@@ -10,11 +9,9 @@ body
   align-items: center;
   justify-content: center;
   height: 100vh;
-  
 }
 
-.right-text 
-{
+.right-text {
   position: fixed;
   top: 55%;
   left: 80%;
@@ -26,77 +23,64 @@ body
   padding: 20px;
 }
 
-.header-container 
-{
-  background-color: silver; 
+.header-container {
+  background-color: silver;
   height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-h1 
-{
+h1 {
   color: #000;
-  font-family: 'cursive', 'Brush Script MT', cursive;
-  
+  font-family: cursive, "Brush Script MT", cursive;
 }
 
-.image-container
-{
+.image-container {
   display: flex;
-  justify-content: space-around; 
-  margin-top: 20px; 
+  justify-content: space-around;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
-.image-container img 
-{
-  max-width: 100%; 
-  height: auto; 
+.image-container img {
+  max-width: 100%;
+  height: auto;
   width: 100px;
 }
 
-.navigation-container
-{
-  background-color: silver; 
+.navigation-container {
+  background-color: silver;
   height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-
-.navigation-container a 
-{
-  margin: 0 150px; 
+.navigation-container a {
+  margin: 0 150px;
   text-decoration: none;
   color: #333;
   font-size: 32px;
-  font-family: 'cursive', 'Brush Script MT', cursive;
+  font-family: cursive, "Brush Script MT", cursive;
 }
 
-.me-image
-{
-  max-width: 100%; 
-  height: auto; 
-  margin-top: 20px; 
-  margin-left: auto; 
-  margin-right: auto; 
-  
+.me-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.biography
-{
-	font-weight: bold;
-	max-width: 25%;
-	margin-left: auto; 
-    margin-right: auto; 
+.biography {
+  font-weight: bold;
+  max-width: 25%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.biography img 
-{
+.biography img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -104,79 +88,62 @@ h1
   margin-right: auto;
 }
 
-.a 
-{
+.a {
   color: inherit;
   text-decoration: none;
-
 }
 
-a:visited
-{
+a:visited {
   color: white;
 }
 
-a:hover 
-{
-text-decoration: underline; 
+a:hover {
+  text-decoration: underline;
 }
 
-footer
- {
+footer {
   background-color: silver;
   text-align: center;
-  color: #000; 
+  color: #000;
   font-size: 12px;
-  padding: 10px; 
+  padding: 10px;
 }
 
-.form 
-{
+.form {
   max-width: 350px;
   margin: 0 auto;
 }
 
-
-.form label 
-{
+.form label {
   display: inline-block;
-  width: 30%; 
+  width: 30%;
   margin-right: 5px;
   text-align: right;
 }
 
-
-.form input 
-{
-  width: 65%; 
+.form input {
+  width: 65%;
   padding: 5px;
   box-sizing: border-box;
   margin-bottom: 10px;
 }
 
-.form input[type="submit"]
-{
+.form input[type="submit"] {
   width: 50%;
 }
 
-
-
-
-.message-label 
-{
+.message-label {
   display: block;
   margin-bottom: 15px;
 }
 
-.grid
-{
+.grid {
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
 
-.grid-item 
-{
+.grid-item {
   display: flex;
   flex-direction: column;
   border: 10px solid #ddd;
@@ -184,30 +151,24 @@ footer
   margin: 10px;
 }
 
-.prompt 
-{
+.prompt {
   font-weight: bold;
 }
 
-.value 
-{
+.value {
   margin-top: 5px;
 }
 
-
-.grid2
-{
-display:grid;
-padding:5px;
+.grid2 {
+  display: grid;
+  padding: 5px;
 }
 
-.grid-item2
-{
-border: 10px solid #ddd;
+.grid-item2 {
+  border: 10px solid #ddd;
 }
 
-.grid-item img
- {
+.grid-item img {
   width: 75%;
   height: auto;
 }
