@@ -12,8 +12,7 @@
     <div class="header-container">
       <h1>Luke "Lukas" Tyon Contact</h1>
     </div>
-    <br />
-    <br />
+
     <div class="navigation-container">
       <a href="index.html">Home</a>
       <a href="contact.html">Contact</a>
@@ -31,47 +30,45 @@
       >
         <label for="first-name">First Name:</label>
         <input type="text" id="first-name" name="first_name" required />
-        <br />
-        <br />
 
         <label for="last-name">Last Name:</label>
         <input type="text" id="last-name" name="last_name" required />
-        <br />
-        <br />
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required />
-        <br />
-        <br />
 
-        <label><b>Am I:</b></label>
-        <br />
-        <br />
-        <input type="radio" id="cool" name="opinion" value="Cool" />
-        <label for="cool">Cool</label>
+        <div class="radio-group">
+          <p><b>Am I:</b></p>
 
-        <input type="radio" id="handsome" name="opinion" value="Handsome" />
-        <label for="handsome">Handsome</label>
+          <div class="radio-option">
+            <input type="radio" id="cool" name="opinion" value="Cool" />
+            <label for="cool">Cool</label>
+          </div>
 
-        <input type="radio" id="funny" name="opinion" value="Funny" />
-        <label for="funny">Funny</label>
-        <br />
+          <div class="radio-option">
+            <input type="radio" id="handsome" name="opinion" value="Handsome" />
+            <label for="handsome">Handsome</label>
+          </div>
 
-        <input type="radio" id="all" name="opinion" value="All of the above" />
-        <label for="all">All of the above</label>
-        <br />
-        <br />
-        <br />
+          <div class="radio-option">
+            <input type="radio" id="funny" name="opinion" value="Funny" />
+            <label for="funny">Funny</label>
+          </div>
 
-        <label for="reason">Reason for contacting:</label>
-        <select id="reason" name="reason">
-          <option value="business">Business</option>
-          <option value="recreation">Recreation</option>
-          <option value="other">Other</option>
-        </select>
-        <br />
-        <br />
-        <br />
+          <div class="radio-option">
+            <input type="radio" id="All" name="opinion" value="All" />
+            <label for="funny">All of the above</label>
+          </div>
+        </div>
+
+        <div class="combo">
+          <label for="reason">Reason for contacting:</label>
+          <select id="reason" name="reason">
+            <option value="business">Business</option>
+            <option value="recreation">Recreation</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
         <label for="message" class="message-label">Message:</label>
         <textarea
@@ -82,15 +79,9 @@
           placeholder="Enter your message here, for example: Wow Luke, you are so Awesome!"
           required
         ></textarea>
-        <br />
-        <br />
 
         <label for="email-back">Email me back?</label>
         <input type="checkbox" id="email-back" name="email_back" />
-        <br />
-        <br />
-        <br />
-
         <input type="submit" value="Submit" />
       </form>
     </div>
