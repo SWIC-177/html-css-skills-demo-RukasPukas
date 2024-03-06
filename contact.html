@@ -22,22 +22,41 @@
       <a href="contact.html" class="hover:text-gray-100">Contact</a>
     </div>
 
-    <div id="about-me">
-      <h2>Contact me:</h2>
+    <div id="about-me" class="justify-center bg-slate-300 text-center">
+      <h2 class="p-5 font-bold text-gray-700">Contact me:</h2>
 
       <form
+        class="flex flex-col items-center space-y-4 p-5"
         action="mailto:lukastyon@gmail.com"
         method="post"
         enctype="text/plain"
       >
         <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first_name" required />
+        <input
+          type="text"
+          id="first-name"
+          name="first_name"
+          required
+          class="rounded-md"
+        />
 
         <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="last_name" required />
+        <input
+          type="text"
+          id="last-name"
+          name="last_name"
+          required
+          class="rounded-md"
+        />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="rounded-md"
+        />
 
         <div>
           <p><b>Am I:</b></p>
