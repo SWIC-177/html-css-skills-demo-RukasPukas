@@ -94,27 +94,34 @@
           </div>
         </div>
 
-        <div>
+        <div
+          class="rounded-lg bg-gray-500 p-5 font-thin transition-transform hover:scale-110"
+        >
           <label for="reason">Reason for contacting:</label>
-          <select id="reason" name="reason" class="rounded-md">
+          <select id="reason" name="reason" class="rounded-md bg-gray-200">
             <option value="business">Business</option>
             <option value="recreation">Recreation</option>
             <option value="other">Other</option>
           </select>
         </div>
 
-        <label for="message" class="message-label font-semibold text-gray-500"
-          >Message:</label
-        >
-        <textarea
-          class="rounded-md p-3 transition-transform hover:scale-110"
-          id="message"
-          name="message"
-          cols="50"
-          rows="10"
-          placeholder="Enter your message here, for example: Wow Luke, you are so Awesome!"
-          required
-        ></textarea>
+        <div class="flex flex-col items-center rounded-lg bg-gray-500 p-10">
+          <label
+            for="message"
+            class="message-label mb-2 p-2 font-semibold text-gray-200"
+          >
+            Message:
+          </label>
+          <textarea
+            class="rounded-md p-3 transition-transform hover:scale-110"
+            id="message"
+            name="message"
+            cols="50"
+            rows="10"
+            placeholder="Enter your message here, for example: Wow Luke, you are so Awesome!"
+            required
+          ></textarea>
+        </div>
 
         <label for="email-back">Email me back?</label>
         <input type="checkbox" id="email-back" name="email_back" />
