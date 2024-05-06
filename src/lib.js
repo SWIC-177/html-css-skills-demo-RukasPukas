@@ -1,3 +1,4 @@
+import validator from "validator";
 export const ERRORS = [
   {
     id: "full-name",
@@ -11,10 +12,16 @@ export const ERRORS = [
     id: "email",
     msg: "Please enter a valid email address.",
     validate(val) {
-      return val.includes("@") && val.includes(".");
+      return validator.isEmail(val);
     },
   },
-  { id: "phone", msg: "Please enter a valid phone number." },
+  {
+    id: "phone",
+    msg: "Please enter a valid phone number.",
+    validate(val) {
+      return validator.isMobilePhone(val, "en-US");
+    },
+  },
   {
     id: "message",
     msg: "Please enter a message between 10 and 100 characters.",
