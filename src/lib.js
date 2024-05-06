@@ -24,7 +24,10 @@ export const ERRORS = [
   },
   {
     id: "message",
-    msg: "Please enter a message between 10 and 100 characters.",
+    msg: "Message field cannot be blank.",
+    validate(val) {
+      return val.trim() !== "";
+    },
   },
 ];
 
