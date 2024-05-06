@@ -19,6 +19,14 @@ const submitBtn = document.querySelector("button[type='submit']");
 
 formEls.forEach((el) => {
   el.addEventListener("blur", (e) => {
-    console.log("blur Event", e.target.id, "value:", e.target.value);
+    const error = ERRORS.find((error) => error.id === e.target.id);
+    if (error) {
+      const isValid = error.validate(e.target.value);
+      if (!isValid) {
+        console.log(error.msg);
+      } else {
+        console.log("Name is valid");
+      }
+    }
   });
 });
