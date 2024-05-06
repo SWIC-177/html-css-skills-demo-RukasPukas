@@ -1,11 +1,12 @@
 export const ERRORS = [
   {
     id: "full-name",
-    msg: "Please enter your full name.",
+    msg: "Please enter your full name and do not include numbers.",
     validate(val) {
-      return val.length > 6 && val.includes(" ");
+      return val.length > 6 && val.includes(" ") && !/\d/.test(val);
     },
   },
+
   { id: "email", msg: "Please enter a valid email address." },
   { id: "phone", msg: "Please enter a valid phone number." },
   {
