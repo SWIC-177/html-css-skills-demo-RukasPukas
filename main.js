@@ -15,8 +15,6 @@ const formEls = [
 ];
 console.log(formEls);
 
-const submitBtn = document.querySelector("input[type='submit']");
-
 formEls.forEach((el) => {
   el.addEventListener("blur", (e) => {
     const elError = ERRORS.find((error) => error.id === e.target.id);
