@@ -24,9 +24,9 @@ export const ERRORS = [
   },
   {
     id: "message",
-    msg: "Message field cannot be blank.",
+    msg: "Message field cannot be blank and cannot contain more than 500 characters.",
     validate(val) {
-      return val.trim() !== "";
+      return val.trim() !== "" && val.length < 500;
     },
   },
 ];
