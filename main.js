@@ -17,6 +17,6 @@ const submitBtn = document.querySelector("button[type='submit']");
 
 formEls.forEach((el) => {
   el.addEventListener("blur", (e) => {
-    console.log("blur Event", e.target.id, e.target.value);
+    console.log("blur Event", e.target.id, "value:", e.target.value);
   });
 });
