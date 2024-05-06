@@ -6,6 +6,7 @@
  * show the error. For now, we are not validating the input fields.
  */
 
+import { ERRORS } from "./src/lib";
 const formEls = [
   ...Array.from(document.querySelectorAll("input")),
   document.querySelector("#message"),
