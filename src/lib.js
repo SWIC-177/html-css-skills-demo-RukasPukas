@@ -7,7 +7,13 @@ export const ERRORS = [
     },
   },
 
-  { id: "email", msg: "Please enter a valid email address." },
+  {
+    id: "email",
+    msg: "Please enter a valid email address.",
+    validate(val) {
+      return val.includes("@") && val.includes(".");
+    },
+  },
   { id: "phone", msg: "Please enter a valid phone number." },
   {
     id: "message",
