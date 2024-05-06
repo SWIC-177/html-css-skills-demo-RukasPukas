@@ -44,4 +44,16 @@ export const renderError = (el, msg) => {
   errorElement.className = "error is-error";
   errorElement.textContent = msg;
   el.parentNode.appendChild(errorElement);
+  disableSubmitButton();
+};
+
+export const disableSubmitButton = () => {
+  const errorMessages = document.querySelectorAll(".error");
+  const submitButton = document.querySelector("#submit-button");
+  submitButton.disabled = errorMessages.length > 0;
+};
+
+export const enableSubmitButton = () => {
+  const submitButton = document.querySelector("#submit-button");
+  submitButton.disabled = false;
 };
