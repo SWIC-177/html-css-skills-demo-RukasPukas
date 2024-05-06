@@ -1,11 +1,3 @@
-/**
- * TODO:
- * 2. 'Select' the submit button.
- * 3. Add event listeners to each input field, such that
- *  upon losing focus (`blur` event) on the input fields, we will
- * show the error. For now, we are not validating the input fields.
- */
-
 import { ERRORS, hideError, renderError } from "./src/lib";
 console.log(ERRORS);
 const formEls = [
