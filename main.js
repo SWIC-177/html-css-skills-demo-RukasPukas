@@ -6,7 +6,7 @@
  * show the error. For now, we are not validating the input fields.
  */
 
-import { ERRORS } from "./src/lib";
+import { ERRORS, hideError, renderError } from "./src/lib";
 console.log(ERRORS);
 const formEls = [
   ...Array.from(document.querySelectorAll("input")),
@@ -19,14 +19,8 @@ const submitBtn = document.querySelector("button[type='submit']");
 
 formEls.forEach((el) => {
   el.addEventListener("blur", (e) => {
-    const error = ERRORS.find((error) => error.id === e.target.id);
-    if (error) {
-      const isValid = error.validate(e.target.value);
-      if (!isValid) {
-        console.log(error.msg);
-      } else {
-        console.log("Name is valid");
-      }
-    }
+    const elError = ERRORS.find((error) => error.id === e.target.id);
+    if (!elError.validate(e.target.value)) renderError(e.target, elError);
+    else hideError(e.target);
   });
 });
