@@ -12,7 +12,7 @@ import {
   hideError,
   renderError,
 } from "./src/lib";
-console.log(ERRORS);
+
 const formEls = [
   ...Array.from(document.querySelectorAll("input")),
   document.querySelector("#message"),
