@@ -1,4 +1,17 @@
-import { ERRORS, hideError, renderError } from "./src/lib";
+document.addEventListener("DOMContentLoaded", function () {
+  const fullNameInput = document.getElementById("full-name");
+  if (fullNameInput) {
+    fullNameInput.focus();
+  }
+});
+
+import {
+  ERRORS,
+  disableSubmitButton,
+  enableSubmitButton,
+  hideError,
+  renderError,
+} from "./src/lib";
 console.log(ERRORS);
 const formEls = [
   ...Array.from(document.querySelectorAll("input")),
@@ -14,6 +27,9 @@ formEls.forEach((el) => {
       renderError(e.target, elError.msg);
     } else {
       hideError(e.target);
+      enableSubmitButton();
     }
+    disableSubmitButton();
   });
 });
+disableSubmitButton();
