@@ -15,7 +15,10 @@ export const ERRORS = [
 ];
 
 export const hideError = (el) => {
-  el.parentNode.querySelector(".error").classList.remove("is-error");
+  const errorEl = el.parentNode.querySelector(".error");
+  if (errorEl) {
+    errorEl.parentNode.removeChild(errorEl);
+  }
 };
 export const renderError = (el, msg) => {
   const errorEl = el.parentNode.querySelector(".error");
