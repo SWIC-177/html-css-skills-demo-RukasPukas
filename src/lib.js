@@ -29,6 +29,7 @@ export const hideError = (el) => {
   });
 };
 export const renderError = (el, msg) => {
+  hideError(el);
   const errorElement = document.createElement("p");
   errorElement.className = "error is-error";
   errorElement.textContent = msg;
