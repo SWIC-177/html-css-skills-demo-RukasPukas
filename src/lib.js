@@ -22,19 +22,15 @@ export const ERRORS = [
 ];
 
 export const hideError = (el) => {
-  const errorEl = el.parentNode.querySelector(".error");
-  if (errorEl) {
-    errorEl.parentNode.removeChild(errorEl);
-  }
+  const parent = el.parentNode;
+  const errorEls = parent.querySelectorAll(".error");
+  errorEls.forEach((errorEl) => {
+    parent.removeChild(errorEl);
+  });
 };
 export const renderError = (el, msg) => {
-  const errorEl = el.parentNode.querySelector(".error");
-
-  if (errorEl) errorEl.classList.add("is-error");
-  else {
-    const errorElement = document.createElement("p");
-    errorElement.className = "error is-error";
-    errorElement.textContent = msg;
-    el.parentNode.appendChild(errorElement);
-  }
+  const errorElement = document.createElement("p");
+  errorElement.className = "error is-error";
+  errorElement.textContent = msg;
+  el.parentNode.appendChild(errorElement);
 };
