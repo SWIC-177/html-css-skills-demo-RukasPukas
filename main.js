@@ -33,3 +33,22 @@ formEls.forEach((el) => {
   });
 });
 disableSubmitButton();
+
+const submitBtn = document.querySelector("#submit-button");
+submitBtn.addEventListener("click", function (event) {
+  const formFieldValues = {
+    fullName: document.getElementById("full-name").value.trim(),
+    email: document.getElementById("email").value.trim(),
+    phone: document.getElementById("phone").value.trim(),
+    message: document.getElementById("message").value.trim(),
+  };
+
+  const isAnyFieldEmpty = Object.values(formFieldValues).some(
+    (value) => value === "",
+  );
+
+  if (isAnyFieldEmpty) {
+    event.preventDefault();
+    alert("All fields must be filled out.");
+  }
+});
